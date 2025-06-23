@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
             horizontalSpace(16.h),
             NewCasesToday(
               height: 200.h,
-              width: 100.w,
+              width: 200.w,
               percent: true,
               bottom: true,
             ),
