@@ -1,12 +1,12 @@
 # 📊 Dashboard – Admin Analytics UI (Flutter)
 
 An elegant and responsive admin dashboard interface built using Flutter.
-This project serves as a modern UI template for web and desktop platforms, focusing on clean architecture and scalability.
+This project serves as a modern UI template for desktop platform, focusing on clean architecture and scalability.
 
 ## 🚀 Features
 
 * ✨ Modern, minimal UI design
-* 💻 Responsive layout (Web/Desktop)
+* 💻 Responsive layout (Desktop)
 * 📈 Dashboard cards & analytics visuals
 * 🤭 Sidebar navigation
 * 🎯 Modular folder structure
@@ -42,7 +42,7 @@ lib/
 │   ├── color.dart
 │   └── style_manager.dart
 │
-├── ui/                     # UI layer
+├── ui/                    
 │   ├── screens/           
 │   │   ├── analytics_screen.dart
 │   │   ├── dashboard_screen.dart
@@ -55,17 +55,6 @@ lib/
 │       └── sidebar.dart
 │
 └── main.dart              
-```
-
-## 💻 Desktop Window Setup
-
-The app configures a minimum window size and title for Windows/Linux/macOS:
-
-```dart
-if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
-  setWindowTitle('Nabta Dashboard');
-  setWindowMinSize(const Size(1700, 900));
-}
 ```
 
 ## 📦 Getting Started
@@ -86,7 +75,7 @@ if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
 3. **Run the project**
 
    ```bash
-   flutter run -d windows     # For desktop
+   flutter run -d windows     
    ```
 ## 🧑‍💻 Author
 
