@@ -80,5 +80,5 @@ lib/
 ## 🧑‍💻 Author
 
 Developed by **Ahmed Abdalaziz**
-Feel free to connect: [LinkedIn](https://www.linkedin.com/in/yourprofile) | [GitHub](https://github.com/Ahmedabdalaziz)
+Feel free to connect: [LinkedIn](https://www.linkedin.com/in/ahmedabdalaziz-abdalbary) | [GitHub](https://github.com/Ahmedabdalaziz)
 
