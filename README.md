@@ -1,16 +1,20 @@
-# dash_board
+# 📊 Dashboard – Admin Analytics UI (Flutter)
 
-A new Flutter project.
+An elegant and responsive admin dashboard interface built using Flutter. This project serves as a modern UI template designed for web and desktop environments.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- Modern, minimal UI design
+- Responsive layout compatible with different screen sizes
+- Dashboard cards with analytics data
+- Side navigation menu
+- Modular and clean code structure
+- Custom theming using `ScreenUtil` and centralized style management
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Built With
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter** – Cross-platform framework
+- **ScreenUtil** – For responsive design
+- **Custom Theming** – `StyleManager` and `ColorsManager`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📂 Folder Structure
