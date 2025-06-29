@@ -88,13 +88,6 @@ if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
    ```bash
    flutter run -d windows     # For desktop
    ```
-
-## ✅ Todo (Optional)
-
-* Add login/authentication flow
-* Integrate real analytics API
-* Improve responsiveness for smaller screens
-
 ## 🧑‍💻 Author
 
 Developed by **Ahmed Abdalaziz**
