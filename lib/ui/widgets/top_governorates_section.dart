@@ -11,16 +11,14 @@ class DashboardTopGovernoratesSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // فرز المحافظات بناءً على إجمالي عدد البلاغات (لتحديد الأهم)
     final sortedGovernorates = List<TopGovernorate>.from(topGovernorates)
       ..sort((a, b) {
         final int totalA = a.topDiseases.fold(0, (sum, d) => sum + d.count);
         final int totalB = b.topDiseases.fold(0, (sum, d) => sum + d.count);
-        return totalB.compareTo(totalA); // تنازليًا
+        return totalB.compareTo(totalA); 
       });
 
-    // نأخذ عدد محدود من المحافظات لعرضها بشكل أنيق (مثلاً، أول 5 أو 7)
-    final displayGovernorates = sortedGovernorates.take(5).toList(); // يمكنك تعديل العدد
+    final displayGovernorates = sortedGovernorates.take(5).toList(); 
 
     return Card(
       elevation: 0,
@@ -46,17 +44,14 @@ class DashboardTopGovernoratesSection extends StatelessWidget {
                             .copyWith(color: ColorsManager.textGrey))),
               )
             else
-            // استخدام Column بدلاً من ListView.builder إذا كان العدد ثابتًا وصغيرًا
-            // أو ListView.builder مع Expanded إذا كان عدد المحافظات كبيرًا جداً
               Column(
                 children: displayGovernorates.map((governorateData) {
                   final governorateName = governorateData.governorate ?? 'غير محدد';
                   final int totalReports = governorateData.topDiseases.fold(0, (sum, d) => sum + d.count);
 
-                  // البحث عن المرض الأكثر شيوعاً داخل هذه المحافظة
                   final topDiseaseInGovernorate = governorateData.topDiseases
-                      .where((d) => d.disease != 'غير متأكد') // تجاهل غير متأكد
-                      .cast<TopGovernorateTopDisease?>() // لتجنب الخطأ المحتمل في next
+                      .where((d) => d.disease != 'غير متأكد')
+                      .cast<TopGovernorateTopDisease?>() 
                       .fold<TopGovernorateTopDisease?>(null, (prev, current) =>
                   (prev == null || current!.count > prev.count) ? current : prev);
 
@@ -83,7 +78,7 @@ class DashboardTopGovernoratesSection extends StatelessWidget {
                               '$totalReports بلاغ',
                               style: CairoTextStyles.medium.copyWith(
                                   fontSize: 15,
-                                  color: ColorsManager.mainGreen), // لون مميز
+                                  color: ColorsManager.mainGreen),
                             ),
                           ],
                         ),
