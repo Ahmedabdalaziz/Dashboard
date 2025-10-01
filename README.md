@@ -1,7 +1,8 @@
 # 📊 Dashboard – Admin Analytics UI (Flutter)
 
 An elegant and responsive admin dashboard interface built using Flutter.
-This project serves as a modern UI template for desktop platform, focusing on clean architecture and scalability.
+This project serves as a modern UI template for desktop And Web platform, focusing on clean
+architecture and scalability.
 
 ## 🚀 Features
 
@@ -77,8 +78,10 @@ lib/
    ```bash
    flutter run -d windows     
    ```
+
 ## 🧑‍💻 Author
 
 Developed by **Ahmed Abdalaziz**
-Feel free to connect: [LinkedIn](https://www.linkedin.com/in/ahmedabdalaziz-abdalbary) | [GitHub](https://github.com/Ahmedabdalaziz)
+Feel free to
+connect: [LinkedIn](https://www.linkedin.com/in/ahmedabdalaziz-abdalbary) | [GitHub](https://github.com/Ahmedabdalaziz)
 

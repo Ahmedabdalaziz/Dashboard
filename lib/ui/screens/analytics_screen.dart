@@ -73,31 +73,24 @@ class AnalyticsScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // إحصائيات سريعة
               _buildQuickStats(today, yesterday, percentChange, reports),
               const SizedBox(height: 20),
 
-              // إحصائيات الحيوانات
               _buildAnimalTypeStats(reports),
               const SizedBox(height: 20),
 
-              // توزيع الحالات حسب الحالة
               _buildStatusDistribution(reports),
               const SizedBox(height: 20),
 
-              // توزيع البلاغات حسب المحافظة
               _buildGovernorateChart(governorates),
               const SizedBox(height: 20),
 
-              // أكثر الأمراض شيوعاً
               _buildTopDiseasesChart(governorates),
               const SizedBox(height: 20),
 
-              // تحليل الاتجاهات الزمنية
               _buildTimeAnalysis(reports),
               const SizedBox(height: 20),
 
-              // ملخص تفصيلي
               _buildDetailedSummary(statsData),
             ],
           ),
@@ -501,7 +494,6 @@ class AnalyticsScreen extends StatelessWidget {
       }
     }
 
-    // أخذ أكثر 5 أمراض شيوعاً
     var sortedDiseases = diseaseCounts.entries.toList()
       ..sort((a, b) => b.value.compareTo(a.value));
     var topDiseases = sortedDiseases.take(5).toList();
